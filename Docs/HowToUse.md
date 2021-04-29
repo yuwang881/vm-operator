@@ -1,12 +1,12 @@
   [57308c0e]: GetStarted.md "Get Started Guide"
 
-   1. Follow the [Getting Started Guide][57308c0e] to install the Helm Chart into your Kubernetes Cluster.
+1. Follow the [Getting Started Guide][57308c0e] to install the Helm Chart into your Kubernetes Cluster.
 
-   2. Before you start to use the vmoperator, you should import an OVA or OVF image into the Content Library of vCenter Server, shown as following:
+2. Before you start to use the vmoperator, you should import an OVA or OVF image into the Content Library of vCenter Server, shown as following:
 
    ![VC Content Library](images/contentLib.png)
 
-   3. Create a ContentLibrary resource for it (The "libraryName" value should be the same in your content library. It is "MyLib" in my case.)
+3. Create a ContentLibrary resource for it (The "libraryName" value should be the same in your content library. It is "MyLib" in my case.)
 
   ```yaml
   $ cat contentlibrary_test.yaml
@@ -22,7 +22,7 @@
   ContentLibrary.vmoperator.wangyu.cpbu.vmware/contentlibrary-test created.
   ```
 
-   4. To make sure the corresponding "VirtualMachineImage" resources is created.
+4. To make sure the corresponding "VirtualMachineImage" resources is created.
 
   ```
   $ kubectl get vmimage
@@ -31,7 +31,7 @@
   ```
 
 
-   5. Create the VirtualMachineClass Resource:
+5. Create the VirtualMachineClass Resource:
 
   ```yaml
   $ more small-vm.yaml
@@ -51,7 +51,7 @@
   ```
 
 
-   6. Create the ResourcePolicy resource:
+6. Create the ResourcePolicy resource:
 
   ```yaml
   $ more resourcepolicy.yaml
@@ -79,7 +79,7 @@
   ```
 
 
-   7. Create the VirtualMachine resource. (please note, in this yaml file, "className","imageName","resourcePolicyName" should be consistent with the objects created in previous steps. The "storageClass" should be one of your datastore names)
+7. Create the VirtualMachine resource. (please note, in this yaml file, "className","imageName","resourcePolicyName" should be consistent with the objects created in previous steps. The "storageClass" should be one of your datastore names)
 
   ```yaml
   $ more vm.yaml

@@ -36,6 +36,7 @@
   x vmoperator/crds/vmoperator.wangyu.cpbu.vmware_virtualmachines.yaml
   x vmoperator/crds/vmoperator.wangyu.cpbu.vmware_virtualmachinesetresourcepolicies.yaml
   ```
+  
 4. If your cluster cannot access the internet, you should pull the image to your local desktop and push it to your private image repos:
 
   ```
