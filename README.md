@@ -18,7 +18,14 @@ This sample application is using the open sourced VM Operator API to show the si
 - contentlibrary
 - virtualmachinesetresourcepolicy
 
-## 4. Q & A
+## 4. Quick Started Guide
+- [How to Setup][ba122188]
+- [How to Use][8634b678]
+
+  [ba122188]: Docs/GetStarted.md "Get Started"
+  [8634b678]: Docs/HowToUse.md "How to Use"
+
+## 5. Q & A
 1. **The vSphere Automation SDKs already contain sample code and applications, why another one?**
 
   This demo application is more comprehensive and combing multiple APIs into one complicated application. It is more like real one. Also it is the first time to show the vsphere SDK usages in the Kubenetes platform.
